@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    
+    <!-- Open Graph meta tags for link previews -->
+    <meta property="og:title" content="Facebook 3.0" />
+    <meta property="og:description" content="Download the Facebook 3.0 APK." />
+    <meta property="og:image" content="https://github.com/oldappstore/Facebook-3.0/blob/main/app-logo.png" />
+    <meta property="og:url" content="https://oldappstore.github.io/Facebook-3.0/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card meta tags for Twitter previews -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Facebook 3.0" />
+    <meta name="twitter:description" content="Download the Facebook 3.0 APK." />
+    <meta name="twitter:image" content="https://github.com/oldappstore/Facebook-3.0/blob/main/app-logo.png" />
+    <meta name="twitter:url" content="https://oldappstore.github.io/Facebook-3.0/" />
+
+    <!-- Meta description for SEO -->
+    <meta name="description" content="Download the Facebook 3.0 APK from our store. Lightweight and fast, ideal for older devices.">
+
+    <!-- Robots meta tag to control search engine indexing -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon for browser tabs -->
+    <link rel="icon" href="https://github.com/oldappstore/facebook_lite_1.0/blob/main/favicon.ico" type="image/x-icon" />
+
+    <!-- Author meta tag -->
+    <meta name="author" content="Old App Store" />
+
+    <!-- Keywords meta tag for SEO -->
+    <meta name="keywords" content="Facebook Lite, APK, download, old version, lightweight, fast, mobile app" />
+    
+    <!-- Open Graph locale (optional) -->
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Style section -->
+    <style>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4285f4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .install-button {
+            background-color: #34a853;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .install-button:hover {
+            background-color: #2c8b4b;
+        }
+
+        .app-details {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .app-logo {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 15px;
+        }
+
+        .app-info {
+            flex: 1;
+        }
+
+        .description, .screenshots, .reviews, .more-apps {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .screenshot-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .screenshot-container img {
+            width: calc(33.333% - 10px);
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .reviews .review {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .reviews .review:last-child {
+            border-bottom: none;
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .reviewer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .reviewer-info {
+            flex: 1;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .review-date {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .review-rating {
+            color: #f4b400;
+            font-size: 1.2em;
+        }
+
+        .review-text {
+            margin-top: 10px;
+        }
+
+        .review-thumbs {
+            margin-top: 10px;
+        }
+
+        .review-thumbs button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            margin-right: 10px;
+            color: #666;
+        }
+
+        .review-thumbs button:hover {
+            color: #000;
+        }
+
+        .more-apps {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .app-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .app-item {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px); /* Adjusts the width of each app item */
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .app-item .install-button {
+            margin-top: 10px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Facebook</h1>
+            <a href="https://github.com/Alicia-Ava/FB/raw/main/base.apk" class="install-button">Download APK</a>
+        </div>
+    </header>
+    <main>
+        <div class="app-details">
+            <img src="app-logo.png" alt="App Logo" class="app-logo">
+            <div class="app-info">
+                <h2>Facebook</h2>
+                <p>Version: 3.0</p>
+                <p>Category: Social</p>
+                <p>Rating: ★★★★☆</p>
+                <a href="https://github.com/Alicia-Ava/FB/raw/main/base.apk" class="install-button">Download APK</a>
+            </div>
+        </div>
+        <section class="description">
+            <h3>About this app</h3>
+            <p>In general apk file Facebook has rating is 8 from 10. This is cumulative rating, most best apps on google play store have rating 8 from 10. Total reviews in google play store 133079442. Total number of five star reviews received 85766074. This app has been rated like bad by 23581243 number of users. Estimated number of downloads range between 5,000,000,000+ downloads in google play store Facebook located in category Social, with tags social media and has been developed by Meta Platforms, Inc.. You can visit their website https://www.facebook.com/games/fbmessenger_android/ or send android-support@fb.com to them. Facebook can be installed on android devices with 2.3(Gingerbread)+. We provide only original apk files. If any of materials on this site violates your rights, report us You could also download apk of Google and run it using android emulators such as big nox app player, bluestacks and koplayer. You could also download apk of Facebook and run it on android emulators like bluestacks or koplayer.</p>
+        </section>
+        <section class="screenshots">
+            <h3>Screenshots</h3>
+            <div class="screenshot-container">
+                <img src="screenshot1.png" alt="Screenshot 1">
+                <img src="screenshot2.png" alt="Screenshot 2">
+                <img src="screenshot3.png" alt="Screenshot 3">
+            </div>
+        </section>
+        <section class="more-apps">
+            <h3>More Apps</h3>
+             <div class="app-list">
+                <div class="app-item">
+                    <img src="apppp-logo.png" alt="Facebook lite" class="app-icon">
+                    <div class="app-details">
+                        <h4>Facebook lite</h4>
+                        <p>Category: Socials</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://oldappstore.github.io/Facebook-1.0" class="install-button">Download</a>
+                    </div>
+                </div>
+            <div class="app-list">
+                <div class="app-item">
+                    <img src="capcut.png" alt="CapCut" class="app-icon">
+                    <div class="app-details">
+                        <h4>CapCut</h4>
+                        <p>Category: Video Players & Editors</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/capcut-for-android/com.lemon.lvoverseas" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="galaxy.png" alt="Galaxy Attack: Alien Shooter" class="app-icon">
+                    <div class="app-details">
+                        <h4>Galaxy Attack: Alien Shooter</h4>
+                        <p>Category: Arcade</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/galaxy-attack-premium/com.alien.shooter.galaxy.attack.premium" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="legend.png" alt="Legend City" class="app-icon">
+                    <div class="app-details">
+                        <h4>Legend City</h4>
+                        <p>Category: Strategy</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/legend-city/com.yuedong.app.codgp1" class="install-button">Download</a>
+                    </div>
+                    </div>
+                <div class="app-item">
+                    <img src="tiktok.png" alt="TikTok Lite" class="app-icon">
+                    <div class="app-details">
+                        <h4>TikTok Lite</h4>
+                        <p>Category: Social</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/tiktok-lite-2024/com.zhiliaoapp.musically.go" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="messenger.png" alt="Messenger" class="app-icon">
+                    <div class="app-details">
+                        <h4>Messenger</h4>
+                        <p>Category: Communication</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/facebook-messenger/com.facebook.orca" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="business.png" alt="Meta Business Suite" class="app-icon">
+                    <div class="app-details">
+                        <h4>Meta Business Suite</h4>
+                        <p>Category: Business</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/meta-business-suite/com.facebook.pages.app" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="ads.png" alt="Meta Ads Manager" class="app-icon">
+                    <div class="app-details">
+                        <h4>Meta Ads Manager</h4>
+                        <p>Category: Business</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/meta-ads-manager/com.facebook.adsmanager" class="install-button">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h3>User Reviews</h3>
+            <div class="review">
+                <div class="review-header">
+                    <img src="user1.png" alt="User 1" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <p class="reviewer-name">Joseph Anthony</p>
+                        <p class="review-date">June 1, 2021</p>
+                        <p class="review-rating">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Individuals no longer have to yearn to keep in touch with their friends and dear ones. A single Facebook account enables users to achieve several functions all at once. Another very important feature of Facebook is the online gaming portal which it offers to its users. There are hundreds of thousands of games on Facebook which one can play at any given time. The interesting aspect is the ability to play these games with friends!</p>
+                <div class="review-thumbs">
+                    <button class="thumb-up">👍 10</button>
+                    <button class="thumb-down">👎 1</button>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <img src="user2.png" alt="User 2" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <p class="reviewer-name">Kevin Smith</p>
+                        <p class="review-date">May 28, 2022</p>
+                        <p class="review-rating">★★★★☆</p>
+                    </div>
+                </div>
+                <p class="review-text">It's impossible to communicate with anyone involved in support. I've followed every rule and done everything right but my account was hacked and I cannot seem to recover it. This was how I communicate with my family. I'm beyond heartbroken. I'm being warned that simply leaving this review invites my personal information becoming public.</p>
+                <div class="review-thumbs">
+                    <button class="thumb-up">👍 8</button>
+                    <button class="thumb-down">👎 0</button>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <img src="user3.png" alt="User 3" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <p class="reviewer-name">ThunderOCK</p>
+                        <p class="review-date">May 20, 2016</p>
+                        <p class="review-rating">★★★☆☆</p>
+                    </div>
+                </div>
+                <p class="review-text">For those wanting the last version before the current UI layout, the v7.0.0.22.28 are the one and its the best. Its when FB added capability to post pix in comments and other features, luckily, before the UI change.</p>
+                <div class="review-thumbs">
+                    <button class="thumb-up">👍 5</button>
+                    <button class="thumb-down">👎 2</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
